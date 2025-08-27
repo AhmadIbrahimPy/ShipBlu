@@ -25,7 +25,7 @@ List all tracking events: GET /app/tracking-events/?search=TRACK123 This shows s
 Orders status transitions must follow: CREATED → PICKED → DELIVERED `tracking_number` is unique for each order Pagination is enabled (10 items per page by default) Filtering and searching are supported for Customers and Orders
 
 ## Running Tests
-To run all tests: python manage.py test This will run all API tests for Customers, Orders, and OrderTrackingEvent functionality.
+To run all tests: python manage.py test backend.orders This will run all API tests for Customers, Orders, and OrderTrackingEvent functionality.
 
 ## Notes
 The API is designed for local development; no deployment configuration is included. Admin panel is available at /admin/ if superuser is created. All endpoints follow RESTful conventions and return JSON responses.
